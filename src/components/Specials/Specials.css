@@ -1,0 +1,32 @@
+
+.specials {
+    width: 80rem;
+    margin-inline: auto;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .special-title{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .specials h2 {
+    font-size: 28px;
+  }
+  
+  .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  .menu-btn {
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #f4ce14;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
