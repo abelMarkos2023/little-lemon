@@ -1,56 +1,94 @@
+.card {
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  text-align: left;
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out;
+}
 
-.cards {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .card {
-    border: 1px solid #ddd;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 100%;
-    text-align: left;
-    background-color: #fff;
-  }
-  
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-title h4 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.card-title span {
+  color: #f08080;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.card-content p {
+  color: #775151;
+  font-size: 0.95rem;
+  font-weight: normal;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.order-btn {
+  margin-top: auto;
+  padding: 10px 16px;
+  border: none;
+  background-color: #f4ce14;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.order-btn:hover {
+  background-color: #e5bd00;
+}
+
+/* 📱 Responsive tweaks for small screens */
+@media (max-width: 600px) {
   .card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
+    height: 150px;
   }
-  
-  .card-content {
-    padding: 24px;
-  }
-  
-  .card-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
+
   .card-title h4 {
-    margin: 0;
+    font-size: 1rem;
   }
-  
+
   .card-title span {
-    color: #f08080;
-    font-weight: bold;
+    font-size: 0.9rem;
   }
-  .card-content p{
-    color: #775151;
-    font-weight: bold;
-    font-size: 20px;
+
+  .card-content p {
+    font-size: 0.9rem;
   }
+
   .order-btn {
-    margin-top: 10px;
+    font-size: 0.85rem;
     padding: 8px 12px;
-    border: none;
-    background-color: #f4f4f4;
-    cursor: pointer;
   }
+}
